@@ -13,7 +13,7 @@ class PigLatinizer
       word = word[1..-1]
       word + moved_char + "way"
     else
-      constants = ""
+      moved_char = ""
       while !vowels.include? word[0]
         moved_char << word[0]
         word = word[1..-1]

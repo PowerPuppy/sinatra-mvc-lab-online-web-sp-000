@@ -2,7 +2,7 @@ class PigLatinizer
 
   def piglatinize(word)
     vowels = ["a", "e", "i", "o", "u","A", "E", "I", "O","U"]
-    moved_char = ""
+
     if vowels.include? word[0]
       word + "way"
     else

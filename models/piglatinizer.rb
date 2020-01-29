@@ -4,9 +4,7 @@ class PigLatinizer
     vowels = ["a", "e", "i", "o", "u","A", "E", "I", "O","U"]
     moved_char = ""
     if vowels.include? word[0]
-      moved_char << word[0]
-      word = word[1..-1]
-      word + moved_char + "way"
+      word + "way"
     else
       moved_char = ""
       while !vowels.include? word[0]
